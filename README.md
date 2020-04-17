@@ -6,6 +6,9 @@ ED2 (EDSCREEN) is a lightweight, screen-oriented, plain-text file editor, suitab
 
 ED2 (EDSCREEN) for CP/M is updated from the original Edward K. Ream program first published in Dr. Dobbs Journal #63, January 1982. and made available through the Simtel and Walnut Creek CP/M repositories.  The editor maintains its C/80 (Software Toolworks) compiler compatibility.
 
+Excerpts from the original Dr. Dobbs Journal Volume 7 articles are in this repository.  The main compilation can be found here:
+https://archive.org/details/dr_dobbs_journal_vol_07_201803/mode/2up
+
 For retro-computing enthusiasts, updates in this version include a visible command mode prompt, WordStar style cursor navigation, and to use backspace and arrow keys prominent on IBM Model-M derived layout (e.g. PC) keyboards.  The default terminal is the (Kaypro) ADM-3A.
 
 ## Mode Switching ##
