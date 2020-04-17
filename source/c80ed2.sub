@@ -1,0 +1,16 @@
+;Compile and assemble the ED2 screen editor with SWTW C/80 for CP/M
+;
+a:c edscreen
+a:c -L2000 ed2
+a:c -L3000 ed3
+a:c -L4000 ed4
+a:c -L5000 ed5
+a:c -L6000 ed6
+a:c -L7000 ed7
+a:c -L8000 ed8
+a:c -L9000 ed9
+a:c -L10000 ed10
+a:as edscreen
+era ed2.com
+ren ed2.com=edscreen.com
+

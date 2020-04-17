@@ -1,0 +1,21 @@
+
+To build a .COM file with the C/80 version of the Dr. Dobbs screen editor,
+first get all the source files (*.C and *.H).  ED6.C contains the screen
+handling functions, and is currently set up for VT52 controls, with
+VT100 available as a #define option.  Modify this for your system.
+
+Use the C compiler to create .ASM files for the following:
+ EDSCREEN.C
+ ED2.C
+ ED3.C
+ ED4.C
+ ED5.C
+ ED6.C
+ ED7.C
+ ED8.C
+ ED9.C
+ ED10.C
+
+Then use Software Toolworks' AS to assemble EDSCREEN and create a .COM file
+(the other .ASM files are automatically included).
+
