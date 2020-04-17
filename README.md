@@ -11,6 +11,10 @@ https://archive.org/details/dr_dobbs_journal_vol_07_201803/mode/2up
 
 For retro-computing enthusiasts, updates in this version include a visible command mode prompt, WordStar style cursor navigation, and to use backspace and arrow keys prominent on IBM Model-M derived layout (e.g. PC) keyboards.  The default terminal is the (Kaypro) ADM-3A.
 
+The CP/M COM file in this repository is set up for Kaypro.  It works great with the Virtual Kaypro Emulator!
+http://sims.durgadas.com/kaypro/kaypro.html
+
+
 ## Mode Switching ##
 
 There are three modes to the editor: 
