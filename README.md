@@ -190,7 +190,7 @@ Change the first instance of **[search mask]** on each line in the line range to
 **save:** Save the buffer in the file named in the load or name commands. **The file must not
 already exist.**
 
-**resave:**Save the buffer in the file named in the load or name commands. **The file must already exist.**
+**resave:** Save the buffer in the file named in the load or name commands. **The file must already exist.**
 
 **dos:** Return to the operating system (exit from the editor).
 
