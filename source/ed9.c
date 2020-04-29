@@ -55,7 +55,7 @@ putdec(n,w) int n,w;
 {
 char chars[10];
 int i,nd;
-	nd=itoc(n,chars,10);
+	nd=utoc(n,chars,10);
 	i=0;
 	while (i<nd) {
 		syscout(chars[i++]);
@@ -67,7 +67,7 @@ int i,nd;
 }
 
 /* convert integer n to character string in str */
-
+/* Deprecated - replaced by utoc(); MDL APR-2020 */
 itoc(n,str,size) int n; char *str; int size;
 {
 int absval;
@@ -101,6 +101,44 @@ int i,j,k;
 	}
 	return(len);
 }
+
+
+
+/* convert unsigned int n to character string in str */
+/* MDL APR-2020 */
+utoc(n,str,size) unsigned n; char *str; int size;
+{
+int len;
+int i,j,k;
+
+	/* generate digits */
+	str[0]=0;
+	i=1;
+	while (i<size) {
+		str[i++]=(n%10)+'0';
+		n=n/10;
+		if (n==0)
+			break;
+	}
+
+	len = --i;
+
+	/* reverse digits */
+	j=0;
+	while (j<i) {
+		k=str[i];
+		str[i]=str[j];
+		str[j]=k;
+		i--;
+		j++;
+	}
+
+	return(len);
+}
+
+
+
+
 
 /* system error routine */
 
@@ -236,4 +274,4 @@ int k, kmax, t;
 	}
 	return(kmax);
 }
-
+
