@@ -454,8 +454,3 @@ bufext(length) int length;
 	bufpmax=bufpmax+length;
 	return(OK);
 }
-
-#include "a:stdlib.c"
-
-current line down */
-	b
